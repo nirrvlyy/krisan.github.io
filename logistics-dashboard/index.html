@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Logistics Dashboard | KRISAN
+    </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ====================================== -->
+    <!-- NAVBAR -->
+    <!-- ====================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            KRISAN
+        </div>
+
+        <div class="nav-right">
+
+            <div class="notification">
+                🔔 Notifications
+            </div>
+
+            <div class="profile">
+                Logistics Company
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ====================================== -->
+    <!-- HEADER -->
+    <!-- ====================================== -->
+
+    <section class="dashboard-header">
+
+        <h1>
+            Logistics Dashboard
+        </h1>
+
+        <p>
+
+            Manage vehicles, shipment capacity,
+            payment verification and delivery process.
+
+        </p>
+
+    </section>
+
+    <!-- ====================================== -->
+    <!-- MENU -->
+    <!-- ====================================== -->
+
+    <section class="dashboard-menu">
+
+        <button class="menu-btn active"
+            data-target="company">
+
+            Company Information
+
+        </button>
+
+        <button class="menu-btn"
+            data-target="verification">
+
+            Payment Verification
+
+        </button>
+
+        <button class="menu-btn"
+            data-target="onair">
+
+            On Air Vehicles
+
+        </button>
+
+        <button class="menu-btn"
+            data-target="finished">
+
+            Finished Shipment
+
+        </button>
+
+    </section>
+
+    <!-- ====================================== -->
+    <!-- COMPANY INFORMATION -->
+    <!-- ====================================== -->
+
+    <section id="company"
+        class="dashboard-section active-section">
+
+        <h2>
+            Available Vehicles
+        </h2>
+
+        <div class="card-grid">
+
+            <!-- SHIP A -->
+
+            <div class="ship-card">
+
+                <h3>
+                    Ship A
+                </h3>
+
+                <div class="capacity">
+
+                    <div class="capacity-bar">
+
+                        <div class="capacity-fill"
+                            style="width:60%">
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Capacity Used :
+                        60%
+                    </p>
+
+                </div>
+
+                <h4>
+                    Travel Information
+                </h4>
+
+                <p>
+                    Destination :
+                    Japan
+                </p>
+
+                <p>
+                    Departure :
+                    15 June 2026
+                </p>
+
+                <p>
+                    ETA Arrival :
+                    25 June 2026
+                </p>
+
+                <p>
+                    ETA Return :
+                    05 July 2026
+                </p>
+
+                <hr>
+
+                <h4>
+                    Cargo List
+                </h4>
+
+                <ul class="cargo-list">
+
+                    <li>
+
+                        Arabica Coffee
+                        (1 Ton)
+
+                        <span class="confirmed">
+                            Confirmed
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        Fresh Orange
+                        (0.5 Ton)
+
+                        <span class="waiting">
+                            Unconfirmed
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- SHIP B -->
+
+            <div class="ship-card">
+
+                <h3>
+                    Ship B
+                </h3>
+
+                <div class="capacity">
+
+                    <div class="capacity-bar">
+
+                        <div class="capacity-fill"
+                            style="width:40%">
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Capacity Used :
+                        40%
+                    </p>
+
+                </div>
+
+                <h4>
+                    Travel Information
+                </h4>
+
+                <p>
+                    Destination :
+                    South Korea
+                </p>
+
+                <p>
+                    Departure :
+                    18 June 2026
+                </p>
+
+                <p>
+                    ETA Arrival :
+                    28 June 2026
+                </p>
+
+                <p>
+                    ETA Return :
+                    08 July 2026
+                </p>
+
+                <hr>
+
+                <h4>
+                    Cargo List
+                </h4>
+
+                <ul class="cargo-list">
+
+                    <li>
+
+                        Coconut Sugar
+                        (0.7 Ton)
+
+                        <span class="confirmed">
+                            Confirmed
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ====================================== -->
+    <!-- PAYMENT VERIFICATION -->
+    <!-- ====================================== -->
+
+    <section id="verification"
+        class="dashboard-section">
+
+        <h2>
+            Payment Verification
+        </h2>
+
+        <div class="verification-card">
+
+            <h3>
+                Arabica Coffee
+            </h3>
+
+            <p>
+                Product Code :
+                ACF-001
+            </p>
+
+            <p>
+                Logistics :
+                Ship A
+            </p>
+
+            <p>
+                Payment By :
+                Buyer
+            </p>
+
+            <p>
+                Payment Method :
+                Advance Payment
+            </p>
+
+            <button class="invoice-btn">
+
+                View Payment Proof
+
+            </button>
+
+            <div class="verification-action">
+
+                <button class="approve-btn">
+
+                    Approve Payment
+
+                </button>
+
+                <button class="reject-btn">
+
+                    Reject Payment
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ====================================== -->
+    <!-- ON AIR VEHICLES -->
+    <!-- ====================================== -->
+
+    <section id="onair"
+        class="dashboard-section">
+
+        <h2>
+            On Air Vehicles
+        </h2>
+
+        <div class="ship-card">
+
+            <h3>
+                Ship C
+            </h3>
+
+            <div class="capacity">
+
+                <div class="capacity-bar">
+
+                    <div class="capacity-fill"
+                        style="width:100%">
+                    </div>
+
+                </div>
+
+                <p>
+                    Capacity Used :
+                    100%
+                </p>
+
+            </div>
+
+            <h4>
+                Travel Information
+            </h4>
+
+            <p>
+                Destination :
+                Japan
+            </p>
+
+            <p>
+                Departure :
+                10 June 2026
+            </p>
+
+            <p>
+                ETA Arrival :
+                20 June 2026
+            </p>
+
+            <p>
+                ETA Return :
+                30 June 2026
+            </p>
+
+            <hr>
+
+            <h4>
+                Cargo List
+            </h4>
+
+            <ul class="cargo-list">
+
+                <li>
+
+                    Arabica Coffee
+                    (ACF-001)
+
+                </li>
+
+                <li>
+
+                    Coconut Sugar
+                    (CSG-100)
+
+                </li>
+
+            </ul>
+
+            <button class="track-btn">
+
+                Track Shipment
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ====================================== -->
+    <!-- FINISHED SHIPMENT -->
+    <!-- ====================================== -->
+
+    <section id="finished"
+        class="dashboard-section">
+
+        <h2>
+            Finished Shipment
+        </h2>
+
+        <div class="finished-card">
+
+            <span class="delivered">
+
+                Delivered
+
+            </span>
+
+            <h3>
+                Arabica Coffee
+            </h3>
+
+            <p>
+                Product Code :
+                ACF-001
+            </p>
+
+            <p>
+                Destination :
+                Japan
+            </p>
+
+            <p>
+                Delivered :
+                25 June 2026
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ====================================== -->
+    <!-- TRACKING MODAL -->
+    <!-- ====================================== -->
+
+    <div id="trackingModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close-track">&times;</span>
+
+        <h2>Shipment Tracking</h2>
+
+        <!-- MAP AREA (GOOGLE MAPS) -->
+        <div class="map-placeholder">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.4913203938!2d106.689431!3d-6.2293867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e0c1a7f6d7%3A0x401576d14fed400!2sJakarta!5e0!3m2!1sen!2sid!4v0000000000000"
+                width="100%"
+                height="300"
+                style="border:0; border-radius:12px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+        <!-- TIMELINE -->
+        <div class="tracking-timeline">
+
+            <div>📍 Jakarta Port</div>
+            <div>🚢 Singapore Waters</div>
+            <div>📍 Singapore Port</div>
+            <div>📍 Buyer Warehouse</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,559 @@
+/* =========================
+   GLOBAL
+========================= */
+
+:root{
+    --primary:#00A86B;
+    --primary-dark:#008c59;
+    --secondary:#0B3D5C;
+    --light:#F4F7FA;
+    --white:#FFFFFF;
+    --text:#333333;
+    --gray:#6B7280;
+
+    --shadow:
+    0 8px 25px rgba(0,0,0,0.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Open Sans',sans-serif;
+    background:var(--light);
+    color:var(--text);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:white;
+    height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+
+    box-shadow:
+    0 2px 15px rgba(0,0,0,0.05);
+
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.notification{
+    background:#EAF8F3;
+    color:var(--primary);
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.profile{
+    background:var(--secondary);
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header{
+    padding:40px 60px;
+}
+
+.dashboard-header h1{
+    color:var(--secondary);
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.dashboard-header p{
+    color:var(--gray);
+    font-size:16px;
+}
+
+/* =========================
+   MENU TAB
+========================= */
+
+.dashboard-menu{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+    padding:0 60px 30px;
+}
+
+.menu-btn{
+
+    border:none;
+    background:white;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,0.05);
+}
+
+.menu-btn:hover{
+
+    background:var(--primary);
+    color:white;
+}
+
+.menu-btn.active{
+
+    background:var(--primary);
+    color:white;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.dashboard-section{
+
+    display:none;
+
+    padding:0 60px 50px;
+}
+
+.active-section{
+
+    display:block;
+}
+
+.dashboard-section h2{
+
+    margin-bottom:25px;
+    color:var(--secondary);
+}
+
+/* =========================
+   GRID
+========================= */
+
+.card-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+}
+
+/* =========================
+   GOODS CARD
+========================= */
+
+.goods-card,
+.info-card,
+.payment-card,
+.logistics-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+}
+
+.goods-card:hover,
+.logistics-card:hover{
+
+    transform:translateY(-5px);
+
+    transition:.3s;
+}
+
+.goods-card h3,
+.info-card h3,
+.logistics-card h3{
+
+    color:var(--secondary);
+    margin:15px 0;
+}
+
+.goods-card p,
+.info-card p,
+.logistics-card p{
+
+    margin-bottom:10px;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status{
+
+    display:inline-block;
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:700;
+}
+
+.waiting{
+
+    background:#FFF3CD;
+    color:#856404;
+}
+
+.confirmed{
+
+    background:#D4EDDA;
+    color:#155724;
+}
+
+.delivered{
+
+    background:#D1ECF1;
+    color:#0C5460;
+}
+
+/* =========================
+   INCOTERMS
+========================= */
+
+.incoterm{
+
+    font-weight:700;
+    margin-top:15px;
+}
+
+.exw{
+
+    color:#1976D2;
+}
+
+.ddp{
+
+    color:var(--primary);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.find-btn,
+.submit-btn,
+.track-btn,
+.logistics-card button{
+
+    width:100%;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    margin-top:15px;
+
+    transition:.3s;
+}
+
+.find-btn:hover,
+.submit-btn:hover,
+.track-btn:hover,
+.logistics-card button:hover{
+
+    background:var(--primary-dark);
+}
+
+/* =========================
+   PAYMENT
+========================= */
+
+.payment-card{
+
+    max-width:700px;
+}
+
+.payment-card label{
+
+    display:block;
+
+    margin-top:20px;
+    margin-bottom:8px;
+
+    font-weight:600;
+}
+
+.payment-card select,
+.payment-card input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+}
+
+.warning{
+
+    background:#FFF8E1;
+
+    color:#8A6D00;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-top:20px;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.5);
+
+    z-index:999;
+}
+
+.modal-content{
+
+    background:white;
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:50px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    position:relative;
+}
+
+.close,
+.close-track{
+
+    position:absolute;
+
+    right:25px;
+    top:20px;
+
+    font-size:30px;
+
+    cursor:pointer;
+}
+
+.modal-content h2{
+
+    color:var(--secondary);
+
+    margin-bottom:25px;
+}
+
+/* =========================
+   TRACK SHIPMENT
+========================= */
+
+.map-placeholder{
+
+    height:300px;
+
+    background:#E5E7EB;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    color:var(--gray);
+
+    font-size:18px;
+
+    margin-bottom:25px;
+}
+
+.tracking-timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.tracking-timeline div{
+
+    background:#F8FAFC;
+
+    padding:15px;
+
+    border-left:5px solid var(--primary);
+
+    border-radius:10px;
+}
+
+/* =========================
+   TABLE STYLE
+========================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+}
+
+table th{
+
+    background:var(--secondary);
+
+    color:white;
+
+    padding:15px;
+}
+
+table td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+}
+
+/* =========================
+   HR
+========================= */
+
+hr{
+
+    margin:20px 0;
+
+    border:none;
+
+    border-top:1px solid #E5E7EB;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .dashboard-header,
+    .dashboard-menu,
+    .dashboard-section{
+
+        padding-left:25px;
+        padding-right:25px;
+    }
+
+    .navbar{
+
+        padding:0 20px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px;
+    }
+
+    .nav-right{
+
+        margin-top:15px;
+    }
+
+    .dashboard-header h1{
+
+        font-size:28px;
+    }
+
+    .dashboard-menu{
+
+        flex-direction:column;
+    }
+
+    .menu-btn{
+
+        width:100%;
+    }
+
+}
