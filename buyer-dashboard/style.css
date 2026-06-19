@@ -64,6 +64,25 @@ body{
     color:var(--primary);
 }
 
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Mengatur jarak horizontal antara KRISAN dan logo InaExport */
+}
+
+.partner-logo {
+    display: flex;
+    align-items: center;
+}
+
+.inaexport-logo {
+    height: 38px;
+    width: auto;
+    display: block;
+    padding-left: 15px;
+    border-left: 1px solid #ddd; /* Garis pembatas vertikal tipis */
+}
+
 .nav-right{
 
     display:flex;
@@ -499,3 +518,24 @@ hr{
     }
 
 }
+
+
+.double-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.confirmed-card,
+.payment-card-wrapper{
+    flex:1;
+}
+
+#confirmed{
+    display:none;
+}
+
+#confirmed.active-section{
+    display:block;
+}
+

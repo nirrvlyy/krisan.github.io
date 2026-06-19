@@ -55,6 +55,22 @@ body{
     color:var(--primary);
 }
 
+.nav-brand{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.partner-logo{
+    padding-left:20px;
+    border-left:1px solid #ddd;
+}
+
+.inaexport-logo{
+    height:35px;
+    width:auto;
+}
+
 .nav-right{
     display:flex;
     align-items:center;
@@ -520,4 +536,41 @@ hr{
         flex-direction:column;
     }
 
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;          /* Jarak antara tombol hijau dan merah */
+    margin-top: 20px;   /* Jarak dari teks di atasnya */
+}
+
+/* Base style untuk semua tombol utama di dashboard */
+.btn {
+    flex: 1;            /* Membuat kedua tombol memiliki lebar yang sama besar */
+    padding: 12px 20px; /* Mengatur ketebalan/jarak dalam tombol */
+    border: none;       /* Menghilangkan garis tepi bawaan browser */
+    border-radius: 8px; /* Membuat sudut tombol melengkung halus */
+    color: white;       /* Warna teks putih */
+    font-weight: 600;   /* Membuat teks sedikit tebal */
+    cursor: pointer;    /* Mengubah kursor menjadi tangan saat diarahkan ke tombol */
+    font-size: 14px;
+    transition: background-color 0.2s; /* Efek transisi halus saat ditekan/dihover */
+}
+
+/* Gaya khusus Tombol Approve (Hijau) */
+.btn-approve {
+    background-color: #00a86b; /* Warna hijau emerald sesuai gambar */
+}
+
+.btn-approve:hover {
+    background-color: #008f5a; /* Warna hijau sedikit lebih gelap saat di-hover */
+}
+
+/* Gaya khusus Tombol Reject (Merah) */
+.btn-reject {
+    background-color: #dc3545; /* Warna merah crimson sesuai gambar */
+}
+
+.btn-reject:hover {
+    background-color: #bd2130; /* Warna merah sedikit lebih gelap saat di-hover */
 }

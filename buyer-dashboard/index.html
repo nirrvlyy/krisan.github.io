@@ -25,23 +25,29 @@
 
     <nav class="navbar">
 
+    <div class="nav-brand">
         <div class="logo">
             KRISAN
         </div>
 
-        <div class="nav-right">
+        <div class="partner-logo">
+            <img src="../assets/images/inaexport.png"
+                 alt="InaExport"
+                 class="inaexport-logo">
+        </div>
+    </div>
 
-            <div class="notification">
-                🔔 Notifications
-            </div>
-
-            <div class="profile">
-                Buyer Account
-            </div>
-
+    <div class="nav-right">
+        <div class="notification">
+            🔔 Notifications
         </div>
 
-    </nav>
+        <div class="profile">
+            Buyer Account
+        </div>
+    </div>
+
+</nav>
 
     <!-- ================= HEADER ================= -->
 
@@ -73,13 +79,6 @@
             data-target="confirmed">
 
             Confirmed Logistics
-
-        </button>
-
-        <button class="menu-btn"
-            data-target="payment">
-
-            Logistics Payment
 
         </button>
 
@@ -156,123 +155,74 @@
     <!-- CONFIRMED LOGISTICS -->
     <!-- ====================================== -->
 
-    <section id="confirmed"
-        class="dashboard-section">
+    <section id="confirmed" class="dashboard-section">
 
-        <h2>
-            Confirmed Logistics
-        </h2>
+    <div class="double-section">
 
-        <div class="info-card">
+        <div class="confirmed-card">
 
-            <h3>
-                Arabica Coffee
-            </h3>
+            <h2>Confirmed Logistics</h2>
 
-            <p>
-                Product Code :
-                ACF-001
-            </p>
+            <div class="info-card">
 
-            <p>
-                Supplier :
-                Indonesia Coffee Supplier
-            </p>
+                <h3>Arabica Coffee</h3>
 
-            <hr>
+                <p>Product Code : ACF-001</p>
 
-            <h4>
-                Logistics Information
-            </h4>
+                <p>Buyer : Tokyo Trading Ltd.</p>
 
-            <p>
-                Logistics :
-                Ship A
-            </p>
+                <hr>
 
-            <p>
-                Bank :
-                BCA 123456789
-            </p>
+                <h4>Logistics Information</h4>
 
-            <p>
-                Departure :
-                15 June 2026
-            </p>
+                <p>Logistics : Ship A</p>
 
-            <p>
-                ETA :
-                25 June 2026
-            </p>
+                <p>Departure Date : 15 June 2026</p>
 
-        </div>
-
-    </section>
-
-    <!-- ====================================== -->
-    <!-- PAYMENT -->
-    <!-- ====================================== -->
-
-    <section id="payment"
-        class="dashboard-section">
-
-        <h2>
-            Logistics Payment
-        </h2>
-
-        <div class="payment-card">
-
-            <p>
-
-                <strong>
-                    Payment Responsibility :
-                </strong>
-
-                Buyer Pays Logistics
-
-            </p>
-
-            <label>
-
-                Payment Method
-
-            </label>
-
-            <select>
-
-                <option>
-                    Advance Payment
-                </option>
-
-                <option>
-                    Letter Of Credit
-                </option>
-
-            </select>
-
-            <label>
-
-                Upload Payment Proof
-
-            </label>
-
-            <input type="file">
-
-            <div class="warning">
-
-                Please upload before departure date.
+                <p>ETA Arrival : 25 June 2026</p>
 
             </div>
 
-            <button class="submit-btn">
+        </div>
 
-                Submit Payment
+        <div class="payment-card-wrapper">
 
-            </button>
+            <h2>Logistics Payment</h2>
+
+            <div class="payment-card">
+
+                <p>
+                    <strong>Payment Responsibility:</strong>
+                    Supplier Pays Logistics
+                </p>
+
+                <label>Payment Method</label>
+
+                <select>
+                    <option>Advance Payment</option>
+                    <option>Letter Of Credit</option>
+                </select>
+
+                <label>Upload Payment Proof</label>
+
+                <input type="file">
+
+                <div class="warning">
+                    Please upload payment proof
+                    before departure date.
+                </div>
+
+                <button class="submit-btn">
+                    Submit Payment
+                </button>
+
+            </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
     <!-- ====================================== -->
     <!-- READY -->
@@ -422,8 +372,8 @@
 
             <div>📍 Jakarta Port</div>
             <div>🚢 Singapore Waters</div>
-            <div>📍 Singapore Port</div>
-            <div>📍 Buyer Warehouse</div>
+            <div>🎯 Singapore Port</div>
+            <div>🏡 Buyer Warehouse</div>
 
         </div>
 

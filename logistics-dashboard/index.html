@@ -20,6 +20,8 @@
 
 </head>
 
+<div id="toast" class="toast"></div>
+
 <body>
 
     <!-- ====================================== -->
@@ -28,9 +30,15 @@
 
     <nav class="navbar">
 
-        <div class="logo">
-            KRISAN
-        </div>
+    <div class="nav-brand">
+    <div class="logo">KRISAN</div>
+
+    <div class="partner-logo">
+        <img src="../assets/images/inaexport.png"
+             alt="InaExport"
+             class="inaexport-logo">
+    </div>
+</div>
 
         <div class="nav-right">
 
@@ -76,6 +84,12 @@
 
             Company Information
 
+        </button>
+
+        <button class="menu-btn"
+            data-target="delivery-request">
+
+            Delivery Requests
         </button>
 
         <button class="menu-btn"
@@ -337,6 +351,42 @@
     </section>
 
     <!-- ====================================== -->
+    <!-- DELIVERY REQUESTS -->
+    <!-- ====================================== -->
+    <section id="delivery-request"
+        class="dashboard-section">
+
+        <h2>
+            Delivery Requests
+        </h2>
+
+        <div class="verification-card">
+
+            <h3>
+                Arabica Coffee
+            </h3>
+
+            <p><strong>Product Code:</strong> ACF-001</p>
+
+                <p><strong>supplier:</strong> Indonesia Coffee Supplier</p>
+
+                <p><strong>Buyer:</strong> Tokyo Trading Ltd.</p>
+
+                <p><strong>Destination:</strong> Japan</p>
+
+                <p><strong>Weight:</strong> 1 Ton</p>
+
+                <p><strong>Incoterms:</strong> EXW</p>
+
+            <div class="button-container">
+            <button class="btn btn-approve delivery-approve-btn">Approve Delivery</button>
+            <button class="btn btn-reject delivery-reject-btn">Reject Delivery</button>
+</div>
+
+    </section>
+
+
+    <!-- ====================================== -->
     <!-- ON AIR VEHICLES -->
     <!-- ====================================== -->
 
@@ -502,8 +552,8 @@
 
             <div>📍 Jakarta Port</div>
             <div>🚢 Singapore Waters</div>
-            <div>📍 Singapore Port</div>
-            <div>📍 Buyer Warehouse</div>
+            <div>🎯 Singapore Port</div>
+            <div>🏡 Buyer Warehouse</div>
 
         </div>
 
